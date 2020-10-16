@@ -1,0 +1,16 @@
+header{
+
+}
+
+.logo-image{
+    display: inline;
+}
+
+.main-nav{
+    display: inline;
+}
+
+.nav-element{
+    color: brown;
+    text-decoration: none;
+}
