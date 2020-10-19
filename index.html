@@ -14,7 +14,7 @@
             <a href="#">
                 <img src="./images/Vector.png" width="100" alt="logo">
             </a>
-            
+
         </div>
         <nav class="main-nav">
             <a class="nav-element" href="#">Services</a>
@@ -58,8 +58,8 @@
 
         <section>
             <div class="our-services">
-                <h3>Our Services</h3> 
-                <div> 
+                <h3>Our Services</h3>
+                <div>
                     <div>
                         <img src="./images/1.jpg" width="150" alt="ph1">
                         <p>AC Repair</p>
@@ -104,9 +104,9 @@
                         <img src="./images/11.png" width="150" alt="ph11">
                         <p>Civil Work</p>
                     </div>
-                </div> 
+                </div>
         </section>
-        
+
         <section>
             <div class="requeest-further-information">
                 <h3>Request further information</h3>
@@ -115,36 +115,37 @@
                         <form action="https://qna.habr.com/question/ivc" method="POST" autocomplete="off">
                             <label for="email">Email</label><br>
                             <input type="email" id="email" name="email"><br>
-            
+
                             <label for="firstname">First name</label><br />
                             <input type="text" id="firstname" name="firstname"><br>
-            
+
                             <label for="lastname">Last name</label><br>
                             <input type="text" id="lastname" name="lastname"><br>
-            
+
                             <label for="companyname">Company name</label><br>
-                            <input type="companyname" id="companyname" name="companyname"><br>
-            
+                            <input type="compantname" id="companyname" name="companyname"><br> <!-- input type-->
+
                             <label for="phonenumber">Phone number</label><br>
                             <input type="number" id="phonenumber" name="phonenumber"><br>
-            
-                            <label for="yourmessage">Your message</label><br>
-                            <input type="yourmessage" id="yourmessage" name="yourmessage"><br>
-                    </form>
-                    <form>
-                        <input type="checkbox" id="terms" name="terms" /> 
-                        <label for="terms">I agree for a representation of something</label><br>
 
-                        <input type="checkbox" id="terms" name="terms" /> 
-                        <label for="terms">Please, also subscribe to our newsletter</label><br>
-                    </form>
-                    <div>
-                        <input type="submit" value="Submit" />
-                    </div>
+                            <label for="yourmessage">Your message</label><br>
+                            <input type="yourmessage" id="yourmessage" name="yourmessage"><br> <!-- input type-->
+                        </form>
+                        <form>
+                            <!-- один тег <form/> на всю ворму -->
+                            <input type="checkbox" id="terms" name="terms" />
+                            <label for="terms">I agree for a representation of something</label><br>
+
+                            <input type="checkbox" id="terms" name="terms" />
+                            <label for="terms">Please, also subscribe to our newsletter</label><br>
+                        </form>
+                        <div>
+                            <input type="submit" value="Submit" />
+                        </div>
                 </div>
-                    <div>
-                        <p>Please, find out our Privacy Policy <ins>here</ins></p>
-                    </div>
+                <div>
+                    <p>Please, find out our Privacy Policy <ins>here</ins></p> <!-- Долна быть ссылка вмсето <p>-->
+                </div>
             </div>
         </section>
 
@@ -154,31 +155,34 @@
                     <h3>Testimonials</h3>
                     <div>
                         <img src="./images/Icon.png" width="30" alt="icon-quotes">
-                        <p>Aristotle maintained the sharp distinction <br> between science and the practical knowledge <br>
-                        of artisans, treating theoretical speculation as <br> the highest type of human activity, practical <br>
-                        thinking about good living </p>
+                        <p>Aristotle maintained the sharp distinction <br> between science and the practical knowledge
+                            <br>
+                            of artisans, treating theoretical speculation as <br> the highest type of human activity,
+                            practical <br>
+                            thinking about good living </p>
                     </div>
                     <div>
                         <img src="./images/Photo 1.png" width="80" alt="people1">
                         <img src="./images/Photo 2.png" width="80" alt="people2">
-                        <img src="./images/Photo3.png" width="120" alt="people3"> 
+                        <img src="./images/Photo3.png" width="120" alt="people3">
                         <img src="./images/Photo 4.png" width="80" alt="people4">
                         <img src="./images/Photo 5.png" width="80" alt="people5">
                         <p>John Doe</p>
                         <p>New Delhi</p>
                     </div>
                 </div>
-            </div>  
+            </div>
+        </section>
 
         <section>
             <div style="background-image: url('./images/dark-blue-background.png');">
-                 <div class="Looking to be a part of Homify?">
+                <div class="Looking to be a part of Homify?"> <!-- названия классов -->
                     <h3>LOOKING TO BE A PART OF HOMIFY</h3>
                     <div>
                         <button type="button"> JOIN US</button>
-                    </div> 
+                    </div>
                 </div>
-            </div>    
+            </div>
         </section>
 
     </main>
@@ -191,11 +195,13 @@
                 </div>
                 <h4>CONTACT</h4>
                 <div>
-                    <p>Call : 9811224540. Email: contatus@homify.com<br>
+                    <p>Call : 9811224540. Email: contatus@homify.com<br> <!-- номера телефонов и емейлы  нудно тоже делать через ссылки -->
+                        <!-- типо вот так <p>Call : <a href="tel:9811224540">9811224540</a>. Email: <a href="email:contatus@homify.com">contatus@homify.com</p> -->
                         GMC: gmc@homify.com<br>
-                        Address: Homify Online Consumer Service Pvt. Ltd.<br>
+                        Address: Homify Online Consumer Service Pvt. Ltd.<br> <!-- Много используешь <br/> вместо него просто оборачивай строку в тэг <p>-->
                         2nd Floor, Building No 1735. Sector 2, HSR Layout,<br> Bengluru Karnataka 560102</p>
                 </div>
+
                 <h4>SERVICES</h4>
                 <div>
                     <ul>
@@ -214,9 +220,9 @@
                         <li><a>Mansion/Civil Work in Bangalore</a></li>
                         <li><a>Tile Granite Laying in Bangalore</a></li>
                         <li><a>House Cleaning in Bangalore</a></li>
-                    </ul> 
-                </div>     
-                <h4>HOMIFY HOME MAINTENANCE PACKAGES</h4>  
+                    </ul>
+                </div>
+                <h4>HOMIFY HOME MAINTENANCE PACKAGES</h4>
                 <div>
                     <ul>
                         <li><a>Full House Maintenance Package Home</a></li>
@@ -224,19 +230,22 @@
                         <li><a>Control Package</a></li>
                         <li><a>Tile Granite Laying in Bangalore</a></li>
                         <li><a>House Cleaning in Bangalore</a></li>
-                    </ul> 
-                </div>      
+                    </ul>
+                </div>
                 <h4>HOMIFY: ONE STOP HOME SERVICE</h4>
                 <div>
-                    <p>Homify is a one-stop solution that caters to all your home maintenance service needs at a short span of
+                    <p>Homify is a one-stop solution that caters to all your home maintenance service needs at a short
+                        span of
                         time.Currently based out of<br>
-                        bangalore it helps in curating the home service vendors as well as provides for an arrayof services ranging
+                        bangalore it helps in curating the home service vendors as well as provides for an arrayof
+                        services ranging
                         from repairing, house cleaning,<br>
-                        painting, carpentry work, pest control and other handymentasks. It connects the homemakers and owners with
+                        painting, carpentry work, pest control and other handymentasks. It connects the homemakers and
+                        owners with
                         the best home service<br>
-                        professionals to have a hassle free experience in this busy life schedule.</p>
-                </div>  
-                <h4>CUSTOMER SERVICE</h4>   
+                        professionals to have a hassle free experience in this busy life schedule.</p> <!-- Разделение текста здесь будет при помощи ограницения длинны блока, не нужно использовать здесть <br>-->
+                </div>
+                <h4>CUSTOMER SERVICE</h4>
                 <div>
                     <ul>
                         <li><a>Customer Care Phone: 9811224540</a></li>
@@ -244,11 +253,11 @@
                         <li><a>F&Q</a></li>
                         <li><a>Feedback</a></li>
                     </ul>
-                </div> 
-                 <div>
+                </div>
+                <div>
                     <button type="button">GET IT ON Google Play</button>
                     <button type="button"> Download on the App Store</button>
-                </div>   
+                </div>
                 <div>
                     <nav class="footer-nav">
                         <a class="nav-element" href="#">About</a>
