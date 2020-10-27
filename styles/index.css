@@ -1,16 +1,107 @@
-header{
+body{
+    background-color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+}
 
+header{
+    background-color: #ffffff;
+    height: 121px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.wrapper{
+    max-width: 1280px;
+    margin: auto;
 }
 
 .logo-image{
-    display: inline;
+    margin: auto;
+    margin-left: 0px;
 }
 
 .main-nav{
-    display: inline;
+    margin: auto;
+    margin-right: 0px;
 }
 
 .nav-element{
-    color: brown;
     text-decoration: none;
+    font-weight: 400;
+    color: #808080;
+    margin-left: 41px;
+
 }
+
+.nav-element.active{
+    color: #4A90E2;
+}
+
+.nav-element:visited{
+    color: #808080;
+}
+
+.nav-element.active:visited{
+    color: #4A90E2; 
+}
+
+.search-pod{
+    text-align: center;
+}
+
+.search-pod input{
+    width: 940px;
+    height: 84px; 
+    margin-top: 325px;
+    border-radius: 6px;
+}
+.why-with-us h3 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+ .card1{
+     margin-left: 149px;
+ }
+
+ .card4{
+     margin-right: 149px;
+ }
+
+ .our-services h3{
+    text-align: center;
+    font-size: 40px;
+ }
+
+ .services{
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .requeest-further-information h3{
+    text-align: center;
+    font-size: 40px;
+ }
+
+ .requeest-further-information{
+    text-align: center;
+ }
+
+
+ .Testimonials h3{
+    text-align: center;
+    font-size: 40px;
+}
+
+.Testimonials{
+    text-align: center;
+}
+
+
