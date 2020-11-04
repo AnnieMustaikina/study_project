@@ -25,9 +25,9 @@
     </header>
     <main>
         <section>
-            <div style="background-image: url('./images/./breather-196135.jpg');">
+            <div style="background-image: url('./images/./breather-196135.jpg'); background-repeat: no-repeat;">
                 <div class="search-pod">
-                    <input placeholder="Start your search here. Example: Plumber, Electrician etc." type="text"/>
+                    <input  class="search-input" placeholder="Start your search here. Example: Plumber, Electrician etc." type="text"/>
                     <i>
                         <img src="./images/search.png" width="30" alt="search" style="margin-left: -60px; margin-bottom: -10px;">
                     </i>
@@ -37,19 +37,19 @@
                     <h3>Why Us? </h3>
                     <div class="cards"> 
                         <div class="onecard"> 
-                            <img src="./images/work-1.png" width="90" alt="icon1" />
+                            <img src="./images/work-1.png" width="90" height="96" alt="icon1" />
                             <p>Dedicated Relationship Manager</p>
                         </div>
                         <div class="onecard">
-                            <img src="./images/work-2.png" width="90" alt="icon2" />
+                            <img src="./images/work-2.png" width="80" height="96" alt="icon2" />
                             <p>Trained In-House Professionals</p>
                         </div>
                         <div class="onecard">
-                            <img src="./images/work-3.png" width="90" alt="icon3" />
+                            <img src="./images/work-3.png" width="80" height="96" alt="icon3" />
                             <p>100% Service Warranty</p>
                         </div>
                         <div class="onecard">
-                            <img src="./images/work-4.png" width="90" alt="icon4" />
+                            <img src="./images/work-4.png" width="96" height="96" alt="icon4" />
                             <p>One Stop Maintenance</p>
                         </div>
                     </div>
@@ -58,55 +58,55 @@
         </section>
 
         <section>
-            <div class="our-services">
+            <div class="our-services wrapper">
                 <h3>Our Services</h3>
                 <div class="services1stline">
                     <div>
-                        <img src="./images/1.jpg" width="150" alt="ph1">
+                        <img src="./images/1.jpg" width="296" alt="ph1">
                         <p>AC Repair</p>
                     </div>
                     <div>
-                        <img src="./images/2.jpg" width="150" alt="ph2">
+                        <img src="./images/2.jpg" width="296" alt="ph2">
                         <p>Plumber</p>
                     </div>
                     <div>
-                        <img src="./images/3.jpg" width="150" alt="ph3">
+                        <img src="./images/3.jpg" width="296" alt="ph3">
                         <p>Electrician</p>
                     </div>
                     <div>
-                        <img src="./images/4.jpg" width="150" alt="ph4">
+                        <img src="./images/4.jpg" width="296" alt="ph4">
                         <p>Carpenter</p>
                     </div>
                 </div>
                 <div class="services2dline">
                     <div>
-                        <img src="./images/5.png" width="150" alt="ph5">
+                        <img src="./images/5.png" width="296" alt="ph5">
                         <p>Appliances</p>
                     </div>
                     <div>
-                        <img src="./images/6.png" width="150" alt="ph6">
+                        <img src="./images/6.png" width="296" alt="ph6">
                         <p>Pest Control</p>
                     </div>
                     <div>
-                        <img src="./images/7.png" width="150" alt="ph7">
+                        <img src="./images/7.png" width="296" alt="ph7">
                         <p>Painter</p>
                     </div>
                     <div>
-                        <img src="./images/8.png" width="150" alt="ph8">
+                        <img src="./images/8.png" width="296" alt="ph8">
                         <p>House Cleaning</p>
                     </div>
                 </div>  
                 <div class="services3dline">
                     <div>
-                        <img src="./images/9.png" width="150" alt="ph9">
+                        <img src="./images/9.png" width="296" alt="ph9" style="padding-right: 25px;">
                         <p>Sofa/Carpet Cleaning</p>
                     </div>
                     <div>
-                        <img src="./images/10.png" width="150" alt="ph10">
+                        <img src="./images/10.png" width="296" alt="ph10" style="padding-right: 25px;">
                         <p>Tile Laying</p>
                     </div>
                     <div>
-                        <img src="./images/11.png" width="150" alt="ph11">
+                        <img src="./images/11.png" width="296" alt="ph11">
                         <p>Civil Work</p>
                     </div>
                 </div>      
@@ -117,9 +117,9 @@
                 <h3>Request further information</h3>
                 <div>
                     <form>
-                        <form action="https://qna.habr.com/question/ivc" method="POST" autocomplete="off" style="padding-left: 20%; padding-right: 20%;">
+                        <form class="fields" action="https://qna.habr.com/question/ivc" method="POST" autocomplete="off" style="padding-left: 20%; padding-right: 20%;">
                             <label for="email">Email</label><br>
-                            <input type="email" id="email" name="email" style="width: 100%; height: 52px;"><br>
+                            <input type="email" id="email" name="email" style="width: 100%; height: 52px"><br>
 
                             <label for="firstname">First name</label><br />
                             <input type="text" id="firstname" name="firstname" style="width: 100%; height: 52px;"><br>
@@ -135,34 +135,38 @@
 
                             <label for="yourmessage">Your message</label><br>
                             <input type="text" id="yourmessage" name="yourmessage" style="width: 100%; height: 52px;"><br> 
-                       
-                            <input type="checkbox" id="terms" name="terms" />
-                            <label for="terms">I agree for a representation of something</label><br>
 
-                            <input type="checkbox" id="terms" name="terms" />
-                            <label for="terms">Please, also subscribe to our newsletter</label><br>
+                            <div class="checkbox" style="margin-top: 30px; line-height: 40px;">
+                                <input type="checkbox" id="terms" name="terms" />
+                                <label for="terms">I agree for a representation of something</label><br>
+
+                                <input type="checkbox" id="terms" name="terms" />
+                                <label for="terms">Please, also subscribe to our newsletter</label><br>
+                            </div>
                         </form>
                         <div class="buttonsumbit">
-                            <input type="submit" value="Submit" style="width: 700px; height: 50px; background-color: #4A90E2; border-radius: 4px; border: #4A90E2;"/>
+                            <input type="submit" value="Submit" style="width: 700px; height: 50px; background-color: #4A90E2; border-radius: 4px; border: #4A90E2; color: #ffffff; margin-top: 60px; margin-bottom: 30px;"/>
                         </div>
-                </div>
-                <div>
-                    <p>Please, find out our Privacy Policy <a class="link" href="#"><ins>here</ins></a></p> 
+                    </div>
+                <div class="text-please">
+                    <p>Please, find out our Privacy Policy <a class="link" href="#" style="color: #1C70EF;"><ins>here</ins></a></p> 
                 </div>
             </div>
         </section>
 
         <section>
             <div style="background-image: url('./images/light blue background.png');">
-                <div class="Testimonials">
+                <div class="Testimonials wrapper">
                     <h3>Testimonials</h3>
                     <div>
-                        <img src="./images/Icon.png" width="30" alt="icon-quotes">
+                        <img src="./images/Icon.png" width="46" height="30" alt="icon-quotes">
+                        <div class="testimonialsmaintext">
                         <p>Aristotle maintained the sharp distinction <br> between science and the practical knowledge
                             <br>
                             of artisans, treating theoretical speculation as <br> the highest type of human activity,
                             practical <br>
                             thinking about good living </p>
+                        </div>
                     </div>
                     <div class="photos" style="text-align: center;">
                         <img src="./images/Photo 1.png" width="74px;" height="74px" alt="people1">
@@ -171,6 +175,9 @@
                         <img src="./images/Photo 4.png" width="74px;" height="74px" alt="people4">
                         <img src="./images/Photo 5.png" width="74px;" height="74px" alt="people5">
                     </div>
+
+                    <img src="./images/Group 10.png" width="1280" height="4" style="padding-top: 70px;">
+
                     <div class="bottomtext1">
                         <p>John Doe</p>
                     </div>
@@ -186,7 +193,7 @@
                 <div class="looking-to-be-a-part-of-Homify">
                     <h3>LOOKING TO BE A PART OF HOMIFY?</h3>
                     <div>
-                        <button type="button" style="width: 320px; height: 84px; background-color: #ffffff; border-radius: 42px; border-color: #ffffff;"> JOIN US </button>
+                        <button type="button" style="width: 320px; height: 84px; background-color: #ffffff; border-radius: 42px; border-color: #ffffff; color: #4A90E2; font-size: 30px; border: none;"> JOIN US </button>
                     </div>
                 </div>
             </div>
@@ -199,22 +206,21 @@
             <div class="footer">
                 <div class="line1">
                 <div class="logo">
-                    <img src="./images/./Logo white.png" width="200" alt="logo" height="47">
+                    <img src="./images/./Logo white.png" width="200" alt="logo" height="47" style="padding-top: 77px;">
                     <p>© 2020 Homify Online Consumer Services Pvt. Ltd.</p>
                         <h4>CONTACT</h4>
                         <p>Call : <a href="all:9811224540">9811224540</a></p>
                         <p>Email: <a href="email:contatus@homify.com">contatus@homify.com</a></p>
                         <p>GMC : <a href="gmc@homify.com">gmc@homify.com</a></p>
                         <p>Address: Homify Online Consumer Service Pvt. Ltd.</p> 
-                        <p>2nd Floor, Building No 1735. Sector 2, HSR Layout,<br> Bengluru Karnataka 560102</p>
+                        <p>2nd Floor, Building No 1735. Sector 2, HSR Layout,<br> Bengluru Karnataka 560102</p>        
                 </div>
  
                 <div>
                     <h4>SERVICES</h4>
-                    <ul>
+                    <ul style="list-style-type: none; line-height: 50px;"> 
                         <li><a>Plumber in Bangalore</a></li>
                         <li><a>Electrician in Bangalore</a></li>
-                        <li><a>Carpenter in Bangalore </a></li>
                         <li><a>Appliances Repair in Bangalore </a></li>
                         <li><a>Pest Control in Bangalore</a></li>
                         <li><a>Painter in Bangalore</a></li>
@@ -222,7 +228,7 @@
                 </div>
 
                 <div>
-                    <ul>
+                    <ul style="list-style-type: none; line-height: 50px;">
                         <li><a>AC Repair in Bangalore</a></li>
                         <li><a>Carpet Cleaning in Bangalore</a></li>
                         <li><a>Mansion/Civil Work in Bangalore</a></li>
@@ -233,7 +239,7 @@
 
                 <div>
                     <h4>HOMIFY HOME MAINTENANCE PACKAGES</h4>
-                    <ul>
+                    <ul style="list-style-type: none; line-height: 50px;">
                         <li><a>Full House Maintenance Package Home</a></li>
                         <li><a>Appliances Maintenance Package Full</a></li>
                         <li><a>Control Package</a></li>
@@ -242,6 +248,8 @@
                     </ul>
                 </div>
                 </div>
+                
+                <img src="./images/Line.png" width="1250" height="2" style="padding-left: 100px;">
 
                 <div class="line2">
                 <div>
@@ -260,7 +268,7 @@
 
                 <div>
                     <h4>CUSTOMER SERVICE</h4>
-                    <ul>
+                    <ul style="list-style-type: none; line-height: 30px;">
                         <li><a>Customer Care Phone: 9811224540</a></li>
                         <li><a>Customer Care Email: contatus@homify.com</a></li>
                         <li><a>F&Q</a></li>
@@ -269,10 +277,12 @@
                 </div>
                 </div>
 
-                <div>
-                    <button type="button">GET IT ON Google Play</button>
-                    <button type="button"> Download on the App Store</button>
-                </div>
+            <div class="buttons">
+                <input type="image" src="./images/./google-play-badge.png" name="button" style="padding-right: 20px;"/>
+                <input type="image" src="./images/./Group 2.png" name="button"/>
+            </div>
+            
+            <img src="./images/Line.png" width="1250" height="2" style="padding-left: 100px; padding-top: 30px;">
 
                 <div class="line4">
                 <div>
@@ -284,13 +294,64 @@
                     </nav>
                 </div>
 
-                <div>
-                        <img src="./images/twitter.png" width="20" alt="twitter">
-                        <img src="./images/Linked-in.png" width="20" alt="linkedIn">
-                        <img src="./images/pininterest.png" width="20" alt="pinterest">
+                <div class="img">
+                        <img src="./images/twitter.png" width="22" height="20" alt="twitter">
+                        <img src="./images/Linked-in.png" width="20" height="20" style="padding-left: 40px;" alt="linkedIn">
+                        <img src="./images/pininterest.png" width="15" height="20" style="padding-left: 40px;" alt="pinterest">
                 </div>
                 </div>
     </footer>
+
+
+
+
+
+<section class="modal"> <!-- При написании с "modal" hidden, мы прячем попап. С JS мы его сможем закрыть-->
+    <button class="modal-close"></button>
+    <div class="b-auth-form">
+        <div class="b-popup-h">Log into your account</div>
+        <form class="auth-form" method="post" action="/">
+            <div class="b-hold">
+                <input
+                    type="text"
+                    placeholder="Username/Email"
+                    tabindex="4"
+                    style="width: 290px;
+                    height: 30px;"
+                />
+                <input
+                    type="password"
+                    placeholder="Password"
+                    tabindex="5" 
+                    style="width: 290px; height: 30px;" 
+                />
+            </div>
+            <div class="b-hold">
+                <input
+                    value="Log In"
+                    tabindex="6"
+                    type="submit"
+                    disabled=""
+                    style="background-color: #4A90E2; color: white; width: 300px; height: 30px; border-radius: 5px; border: none;"
+                />
+            </div>
+            <div class="b-hold b-hold--add">
+                <span class="b-remember">
+                    <label class="login-checkbox" tabindex="7">
+                        <input
+                            name="remember"
+                            type="checkbox"
+                            checked="checked"
+                            class="hidden"
+                        />
+                        <span class="checkbox-indicator"></span>
+                    Remember me</label>
+                </span> 
+                <a class="b-auth-recall" href="#" tabindex="8">Forgot password?</a>
+            </div>
+        </form>
+    </div>
+</section>
 
 </body>
 

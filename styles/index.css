@@ -32,7 +32,6 @@ header{
     font-weight: 400;
     color: #808080;
     margin-left: 41px;
-
 }
 
 .nav-element.active{
@@ -56,20 +55,30 @@ header{
     height: 84px; 
     margin-top: 325px;
     border-radius: 6px;
-    border-color: #ffffff;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
+.search-input::placeholder {
+    color: rgba(128,128,128,0.5);
+    font-size: 24px;
+    padding-left: 90px;
+}
 .why-with-us{
     margin-top: 296px;
     background-color: #ffffff;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 80px;
+    margin-right: 80px;
+    height: 395px;
 }
 
-h3 {
+.why-with-us h3{
     text-align: center;
+    padding-top: 40px;
     font-size: 40px;
+    padding-bottom: 60px;
 }
+
 
 .cards{
     display: flex;
@@ -77,6 +86,7 @@ h3 {
     flex-direction: row;
     align-items: center;
 }
+
 .onecard{
     display: block;
     text-align: center;
@@ -84,9 +94,21 @@ h3 {
     margin-right: auto;
 }
 
+.onecard p{
+    color: #465366;
+}
+
+.our-services h3{
+    text-align: center;
+    padding-top: 140px;
+    font-size: 40px;
+    padding-bottom: 50px;
+}
+
  .services{
     display: flex;
     justify-content: space-between;
+    height: 1400px;
  }
 
  .services1stline{
@@ -94,6 +116,13 @@ h3 {
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
+    padding-bottom: 70px;
+ }
+
+ .services1stline p{
+    color: #808080;
+    text-align: center;
+    font-size: 30px;
  }
 
  .services2dline{
@@ -101,27 +130,69 @@ h3 {
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
+    padding-bottom: 70px;
+ }
+
+ .services2dline p{
+    color: #808080;
+    text-align: center;
+    font-size: 30px;
  }
 
  .services3dline{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-direction: row;
     align-items: center;
+    padding-left: 10px;
+ }
+
+ .services3dline p{
+    color: #808080;
+    text-align: center;
+    font-size: 30px;
  }
 
  .requeest-further-information{
     text-align: left;
     margin-left: 370px;
     margin-right: 370px;
+    height: 1040px;
+ }
+
+ .requeest-further-information h3{
+    text-align: center;
+    padding-top: 120px;
+    font-size: 40px;
+    padding-bottom: 40px;
  }
 
  .buttonsumbit{
     display: flex;
  }
 
-.Testimonials{
+
+ .text-please{
     text-align: center;
+ }
+
+.Testimonials {
+    text-align: center;
+    height: 1120px;
+}
+
+.testimonialsmaintext{
+    font-size: 24px;
+    line-height: 46px;
+    padding-top: 30px;
+    padding-bottom: 110px;
+}
+
+.Testimonials h3{
+    text-align: center;
+    padding-top: 100px;
+    font-size: 40px;
+    padding-bottom: 80px;
 }
 
 .photos{
@@ -132,6 +203,7 @@ h3 {
 .bottomtext1 p{
     font-size: 22px;
     color: #2C2C2C;
+    padding-bottom: 15px;
 }
 
 .bottomtext2 p{
@@ -144,6 +216,7 @@ h3 {
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
+    height: 234px;
 }
 
 .looking-to-be-a-part-of-Homify h3{
@@ -156,9 +229,15 @@ h3 {
     color: #C8C8C8;
 }
 
+
 h4{
     font-size: 18px;
     color: #ffffff;
+}
+
+.footer{
+    height: 920px;
+    color: #C8C8C8;
 }
 
 .line1{
@@ -166,6 +245,16 @@ h4{
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
+    font-size: 14px;
+}
+
+.line1 a{
+    text-decoration: none;
+    color: #9FA3A7;
+}
+
+.line1 h4{
+    padding-top: 30px;
 }
 
 .line2{
@@ -173,11 +262,173 @@ h4{
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
+    font-size: 14px;
+    padding-left: 70px;
+}
+
+.line2 p{
+    line-height: 24px;
+}
+
+.line2 h4{
+    padding-top: 30px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 105px;
 }
 
 .line4{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-direction: row;
     align-items: center;
+    padding-top: 50px;
+    padding-left: 60px;
 }
+
+.img{
+    padding-left: 550px;
+}
+
+
+/* Стили для попапа */
+
+.modal{ 
+    display: inline;
+    width: 320px;
+    padding: 20px 40px;
+    background-color: white;
+    border-radius: 5px;
+
+    min-height: 100px;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%); 
+
+    box-shadow: 0 30px 50px rgba(0,0,0,0.7);
+}
+
+.modal-close{
+    width: 22px;
+    height: 22px;
+
+    border: 0;
+
+    background-color: transparent;
+
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+.modal-close::after,
+.modal-close::before{
+    content: '';
+
+    position: absolute;
+    width: 19px;
+    height: 3px;
+    background-color: #808080;
+
+    top: 10px;
+    left: 2px;
+}
+
+.modal-close::after{
+    transform: rotate(45deg);
+}
+
+.modal-close::before{
+    transform: rotate(-45deg);
+}
+
+
+
+.hidden{
+    display: none;
+}
+
+.b-auth-form .b-popup-h{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: o;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.b-auth-form .b-hold{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.b-hold{
+    margin: 0px 5px 20px;
+}
+
+.b-auth-form .b-hold--add{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.b-auth-recall{
+    color: #4A90E2;
+}
+
+.login-checkbox{
+    position: relative;
+    cursor: pointer;
+    padding-left: 30px;
+}
+.login-checkbox input [type='checkbox'] + .checkbox-indicator{
+    position: absolute;
+    top: 0px;
+    left: opx;
+
+    width: 15px;
+    height: 15px;
+
+    border: 2px solid black;
+}
+
+.login-checkbox
+    input[type='checkbox']:checked
+    + .checkbox-indicator::before,
+.login-checkbox
+    input[type='checkbox']:checked
+    + .checkbox-indicator::after{
+    content: '';
+
+    position: absolute;
+    top: 10px;
+    left: 1px;
+
+    width: 15px;
+    height: 2px;
+
+    background-color: #4A90E2;
+    }
+
+    .login-checkbox
+        input[type='checkbox']:checked
+        +.checkbox-indicator::before{
+            transform: rotate(45deg);
+        }
+
+        .login-checkbox
+        input[type='checkbox']:checked
+        +.checkbox-indicator::after{
+            transform: rotate(-45deg);
+        }
