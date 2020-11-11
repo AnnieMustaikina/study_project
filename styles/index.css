@@ -2,6 +2,7 @@ body{
     background-color: #ffffff;
     font-family: 'Open Sans', sans-serif;
     width: 100%;
+    margin: 0;
 }
 
 header{
@@ -42,8 +43,17 @@ header{
     color: #808080;
 }
 
+.nav-element:hover{
+    opacity: 0.8;
+}
+
 .nav-element.active:visited{
     color: #4A90E2; 
+}
+
+.section1{
+    background-repeat: no-repeat; 
+    background-size: 100% 75%;
 }
 
 .search-pod{
@@ -64,6 +74,13 @@ header{
     font-size: 24px;
     padding-left: 90px;
 }
+
+.search-img{
+    width: 30px;
+    margin-left: -60px;
+    margin-bottom: -10px;
+}
+
 .why-with-us{
     margin-top: 296px;
     background-color: #ffffff;
@@ -111,7 +128,7 @@ header{
     height: 1400px;
  }
 
- .services1stline{
+ .services-line{
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -119,27 +136,13 @@ header{
     padding-bottom: 70px;
  }
 
- .services1stline p{
+ .services-line p{
     color: #808080;
     text-align: center;
     font-size: 30px;
  }
 
- .services2dline{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    align-items: center;
-    padding-bottom: 70px;
- }
-
- .services2dline p{
-    color: #808080;
-    text-align: center;
-    font-size: 30px;
- }
-
- .services3dline{
+ .services2d-line{
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
@@ -147,10 +150,14 @@ header{
     padding-left: 10px;
  }
 
- .services3dline p{
+ .services2d-line p{
     color: #808080;
     text-align: center;
     font-size: 30px;
+ }
+
+ .cards{
+    padding-right: 25px;
  }
 
  .requeest-further-information{
@@ -167,16 +174,41 @@ header{
     padding-bottom: 40px;
  }
 
+ .fields{
+    padding-left: 20%;
+    padding-right: 20%;
+ }
+
+ .input-field{
+    width: 100%; 
+    height: 52px;
+ }
+
+.checkbox{
+    margin-top: 30px; 
+    line-height: 40px;
+}
+
  .buttonsumbit{
     display: flex;
  }
 
+ .button-sumbit{
+    width: 700px; 
+    height: 50px; 
+    background-color: #4A90E2; 
+    border-radius: 4px; 
+    border: #4A90E2; 
+    color: #ffffff; 
+    margin-top: 60px; 
+    margin-bottom: 30px;
+ }
 
  .text-please{
     text-align: center;
  }
 
-.Testimonials {
+.testimonials {
     text-align: center;
     height: 1120px;
 }
@@ -188,16 +220,49 @@ header{
     padding-bottom: 110px;
 }
 
-.Testimonials h3{
+.testimonials h3{
     text-align: center;
     padding-top: 100px;
     font-size: 40px;
     padding-bottom: 80px;
 }
 
+.container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 50px;
+}
+
+.shink{
+    width: 74px;
+    z-index: 1;
+}
+
+.shink.active{
+    width: 117px;
+    margin-left: 585px;
+}
+
+.shink.active .blue-border{
+    width: 100%;
+    background-color: #4A90E2;
+    height: 4px;
+}
+
+.main-border{
+    position: absolute;
+    height: 4px;
+    background-color: #E8E9ED;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
 .photos{
     display: flex;
     justify-content: space-between;
+    text-align: center;
 }
 
 .bottomtext1 p{
@@ -224,11 +289,42 @@ header{
     color: #ffffff;
 }
 
+.joinus-button{
+    width: 320px; 
+    height: 84px; 
+    background-color: #ffffff; 
+    border-radius: 42px; 
+    border-color: #ffffff; 
+    color: #4A90E2; 
+    font-size: 30px; 
+    border: none;
+}
+
 .logo{
     margin-left: 84px;
     color: #C8C8C8;
 }
 
+.footer-photo{
+    padding-top: 77px;
+    width: 200px;
+}
+
+.footer-line1{
+    list-style-type: none; 
+    line-height: 50px;
+}
+
+.footer-line11{
+    margin-top: 100px;
+    list-style-type: none; 
+    line-height: 50px;
+}
+
+.footer-line2{
+    list-style-type: none; 
+    line-height: 30px;
+}
 
 h4{
     font-size: 18px;
@@ -249,6 +345,11 @@ h4{
 }
 
 .line1 a{
+    text-decoration: none;
+    color: #9FA3A7;
+}
+
+.footer-line2 a{
     text-decoration: none;
     color: #9FA3A7;
 }
@@ -291,9 +392,29 @@ h4{
     padding-left: 60px;
 }
 
+.icons{
+    padding-left: 40px;
+}
+
 .img{
     padding-left: 550px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Стили для попапа */

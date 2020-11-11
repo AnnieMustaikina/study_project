@@ -18,18 +18,18 @@
             </a>
         </div>
         <nav class="main-nav">
-            <a class="nav-element" href="#">Services </a>
+            <a class="nav-element" href="#">Services</a>
             <a class="nav-element" href="#">Homify Maintenance Cover</a>
             <a class="nav-element active" href="#">Login</a>
         </nav>
     </header>
     <main>
-        <section>
-            <div style="background-image: url('./images/./breather-196135.jpg'); background-repeat: no-repeat;">
+        <section class="section1">
+            <div style="background-image: url('./images/./breather-196135.jpg'); background-repeat: no-repeat; background-size: 100% 75%">
                 <div class="search-pod">
                     <input  class="search-input" placeholder="Start your search here. Example: Plumber, Electrician etc." type="text"/>
                     <i>
-                        <img src="./images/search.png" width="30" alt="search" style="margin-left: -60px; margin-bottom: -10px;">
+                        <img class="search-img" src="./images/search.png" alt="search">
                     </i>
                 </div>
 
@@ -60,7 +60,7 @@
         <section>
             <div class="our-services wrapper">
                 <h3>Our Services</h3>
-                <div class="services1stline">
+                <div class="services-line">
                     <div>
                         <img src="./images/1.jpg" width="296" alt="ph1">
                         <p>AC Repair</p>
@@ -78,7 +78,7 @@
                         <p>Carpenter</p>
                     </div>
                 </div>
-                <div class="services2dline">
+                <div class="services-line">
                     <div>
                         <img src="./images/5.png" width="296" alt="ph5">
                         <p>Appliances</p>
@@ -96,13 +96,13 @@
                         <p>House Cleaning</p>
                     </div>
                 </div>  
-                <div class="services3dline">
+                <div class="services2d-line">
                     <div>
-                        <img src="./images/9.png" width="296" alt="ph9" style="padding-right: 25px;">
+                        <img class="cards" src="./images/9.png" width="296" alt="ph9">
                         <p>Sofa/Carpet Cleaning</p>
                     </div>
                     <div>
-                        <img src="./images/10.png" width="296" alt="ph10" style="padding-right: 25px;">
+                        <img class="cards" src="./images/10.png" width="296" alt="ph10">
                         <p>Tile Laying</p>
                     </div>
                     <div>
@@ -117,26 +117,26 @@
                 <h3>Request further information</h3>
                 <div>
                     <form>
-                        <form class="fields" action="https://qna.habr.com/question/ivc" method="POST" autocomplete="off" style="padding-left: 20%; padding-right: 20%;">
+                        <form class="fields" action="https://qna.habr.com/question/ivc" method="POST" autocomplete="off">
                             <label for="email">Email</label><br>
-                            <input type="email" id="email" name="email" style="width: 100%; height: 52px"><br>
+                            <input class="input-field" type="email" id="email" name="email"><br>
 
                             <label for="firstname">First name</label><br />
-                            <input type="text" id="firstname" name="firstname" style="width: 100%; height: 52px;"><br>
+                            <input class="input-field" type="text" id="firstname" name="firstname"><br>
 
                             <label for="lastname">Last name</label><br>
-                            <input type="text" id="lastname" name="lastname" style="width: 100%; height: 52px;"><br>
+                            <input class="input-field" type="text" id="lastname" name="lastname"><br>
 
                             <label for="companyname">Company name</label><br>
-                            <input type="text" id="companyname" name="companyname" style="width: 100%; height: 52px;"><br> 
+                            <input class="input-field" type="text" id="companyname" name="companyname"><br> 
 
                             <label for="phonenumber">Phone number</label><br>
-                            <input type="number" id="phonenumber" name="phonenumber" style="width: 100%; height: 52px;"><br>
+                            <input class="input-field" type="number" id="phonenumber" name="phonenumber"><br>
 
                             <label for="yourmessage">Your message</label><br>
-                            <input type="text" id="yourmessage" name="yourmessage" style="width: 100%; height: 52px;"><br> 
+                            <input class="input-field" type="text" id="yourmessage" name="yourmessage"><br> 
 
-                            <div class="checkbox" style="margin-top: 30px; line-height: 40px;">
+                            <div class="checkbox">
                                 <input type="checkbox" id="terms" name="terms" />
                                 <label for="terms">I agree for a representation of something</label><br>
 
@@ -145,7 +145,7 @@
                             </div>
                         </form>
                         <div class="buttonsumbit">
-                            <input type="submit" value="Submit" style="width: 700px; height: 50px; background-color: #4A90E2; border-radius: 4px; border: #4A90E2; color: #ffffff; margin-top: 60px; margin-bottom: 30px;"/>
+                            <input class="button-sumbit" type="submit" value="Submit"/>
                         </div>
                     </div>
                 <div class="text-please">
@@ -156,7 +156,7 @@
 
         <section>
             <div style="background-image: url('./images/light blue background.png');">
-                <div class="Testimonials wrapper">
+                <div class="testimonials wrapper">
                     <h3>Testimonials</h3>
                     <div>
                         <img src="./images/Icon.png" width="46" height="30" alt="icon-quotes">
@@ -168,22 +168,32 @@
                             thinking about good living </p>
                         </div>
                     </div>
-                    <div class="photos" style="text-align: center;">
+                    <div class="photos">
                         <img src="./images/Photo 1.png" width="74px;" height="74px" alt="people1">
                         <img src="./images/Photo 2.png" width="74px;" height="74px" alt="people2">
-                        <img src="./images/Photo3.png" width="117px;" height="117px" alt="people3">
+                        <img class="image active" src="./images/Photo3.png" width="117px;" height="117px" alt="people3">
                         <img src="./images/Photo 4.png" width="74px;" height="74px" alt="people4">
                         <img src="./images/Photo 5.png" width="74px;" height="74px" alt="people5">
                     </div>
 
-                    <img src="./images/Group 10.png" width="1280" height="4" style="padding-top: 70px;">
+                    <div class="container">
+                        <div class="main-border">
+                        <div class="shink"> </div>
+                        <div class="shink"> </div>
+                        <div class="shink active"> 
+                            <div class="blue-border"></div>
+                            <div class="bottomtext1">
+                                <p>John Doe</p>
+                            </div>
+                            <div class="bottomtext2">
+                                <p>New Delhi</p>
+                            </div>
+                        </div>
+                        <div class="shink"> </div>
+                        <div class="shink"> </div>
+                        </div>
+                    </div>
 
-                    <div class="bottomtext1">
-                        <p>John Doe</p>
-                    </div>
-                    <div class="bottomtext2">
-                        <p>New Delhi</p>
-                    </div>
                 </div>
             </div>
         </section>
@@ -193,7 +203,7 @@
                 <div class="looking-to-be-a-part-of-Homify">
                     <h3>LOOKING TO BE A PART OF HOMIFY?</h3>
                     <div>
-                        <button type="button" style="width: 320px; height: 84px; background-color: #ffffff; border-radius: 42px; border-color: #ffffff; color: #4A90E2; font-size: 30px; border: none;"> JOIN US </button>
+                        <button class="joinus-button" type="button" > JOIN US </button>
                     </div>
                 </div>
             </div>
@@ -206,45 +216,45 @@
             <div class="footer">
                 <div class="line1">
                 <div class="logo">
-                    <img src="./images/./Logo white.png" width="200" alt="logo" height="47" style="padding-top: 77px;">
+                    <img class="footer-photo" src="./images/./Logo white.png" alt="logo" height="47">
                     <p>© 2020 Homify Online Consumer Services Pvt. Ltd.</p>
                         <h4>CONTACT</h4>
-                        <p>Call : <a href="all:9811224540">9811224540</a></p>
-                        <p>Email: <a href="email:contatus@homify.com">contatus@homify.com</a></p>
-                        <p>GMC : <a href="gmc@homify.com">gmc@homify.com</a></p>
+                        <p>Call: <a href="tel:9811224540">9811224540</a></p>
+                        <p>Email: <a href="mailto:contatus@homify.com">contatus@homify.com</a></p>
+                        <p>GMC: <a href="mailto:gmc@homify.com">gmc@homify.com</a></p>
                         <p>Address: Homify Online Consumer Service Pvt. Ltd.</p> 
                         <p>2nd Floor, Building No 1735. Sector 2, HSR Layout,<br> Bengluru Karnataka 560102</p>        
                 </div>
  
                 <div>
                     <h4>SERVICES</h4>
-                    <ul style="list-style-type: none; line-height: 50px;"> 
-                        <li><a>Plumber in Bangalore</a></li>
-                        <li><a>Electrician in Bangalore</a></li>
-                        <li><a>Appliances Repair in Bangalore </a></li>
-                        <li><a>Pest Control in Bangalore</a></li>
-                        <li><a>Painter in Bangalore</a></li>
+                    <ul class="footer-line1"> 
+                        <li><a href="#">Plumber in Bangalore</a></li>
+                        <li><a href="#">Electrician in Bangalore</a></li>
+                        <li><a href="#">Appliances Repair in Bangalore </a></li>
+                        <li><a href="#">Pest Control in Bangalore</a></li>
+                        <li><a href="#">Painter in Bangalore</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <ul style="list-style-type: none; line-height: 50px;">
-                        <li><a>AC Repair in Bangalore</a></li>
-                        <li><a>Carpet Cleaning in Bangalore</a></li>
-                        <li><a>Mansion/Civil Work in Bangalore</a></li>
-                        <li><a>Tile Granite Laying in Bangalore</a></li>
-                        <li><a>House Cleaning in Bangalore</a></li>
+                    <ul class="footer-line11">
+                        <li><a href="#">AC Repair in Bangalore</a></li>
+                        <li><a href="#">Carpet Cleaning in Bangalore</a></li>
+                        <li><a href="#">Mansion/Civil Work in Bangalore</a></li>
+                        <li><a href="#">Tile Granite Laying in Bangalore</a></li>
+                        <li><a href="#">House Cleaning in Bangalore</a></li>
                     </ul>
                 </div>
 
                 <div>
                     <h4>HOMIFY HOME MAINTENANCE PACKAGES</h4>
-                    <ul style="list-style-type: none; line-height: 50px;">
-                        <li><a>Full House Maintenance Package Home</a></li>
-                        <li><a>Appliances Maintenance Package Full</a></li>
-                        <li><a>Control Package</a></li>
-                        <li><a>Tile Granite Laying in Bangalore</a></li>
-                        <li><a>House Cleaning in Bangalore</a></li>
+                    <ul class="footer-line1">
+                        <li><a href="#">Full House Maintenance Package Home</a></li>
+                        <li><a href="#">Appliances Maintenance Package Full</a></li>
+                        <li><a href="#">Control Package</a></li>
+                        <li><a> href="#"Tile Granite Laying in Bangalore</a></li>
+                        <li><a href="#">House Cleaning in Bangalore</a></li>
                     </ul>
                 </div>
                 </div>
@@ -268,9 +278,9 @@
 
                 <div>
                     <h4>CUSTOMER SERVICE</h4>
-                    <ul style="list-style-type: none; line-height: 30px;">
-                        <li><a>Customer Care Phone: 9811224540</a></li>
-                        <li><a>Customer Care Email: contatus@homify.com</a></li>
+                    <ul class="footer-line2">
+                        <li>Customer Care Phone: <a href="tel:9811224540">9811224540</a></li>
+                        <li>Customer Care Email: <a href="mailto:contatus@homify.com">contatus@homify.com</a></li>
                         <li><a>F&Q</a></li>
                         <li><a>Feedback</a></li>
                     </ul>
@@ -278,7 +288,7 @@
                 </div>
 
             <div class="buttons">
-                <input type="image" src="./images/./google-play-badge.png" name="button" style="padding-right: 20px;"/>
+                <input type="image" src="./images/./google-play-badge.png" name="button" style="margin-right: 20px; margin-left: -10px;"/>
                 <input type="image" src="./images/./Group 2.png" name="button"/>
             </div>
             
@@ -296,8 +306,8 @@
 
                 <div class="img">
                         <img src="./images/twitter.png" width="22" height="20" alt="twitter">
-                        <img src="./images/Linked-in.png" width="20" height="20" style="padding-left: 40px;" alt="linkedIn">
-                        <img src="./images/pininterest.png" width="15" height="20" style="padding-left: 40px;" alt="pinterest">
+                        <img class="icons" src="./images/Linked-in.png" width="20" height="20" alt="linkedIn">
+                        <img class="icons" src="./images/pininterest.png" width="15" height="20" alt="pinterest">
                 </div>
                 </div>
     </footer>
@@ -316,8 +326,7 @@
                     type="text"
                     placeholder="Username/Email"
                     tabindex="4"
-                    style="width: 290px;
-                    height: 30px;"
+                    style="width: 290px; height: 30px; margin-bottom: 20px;"
                 />
                 <input
                     type="password"
