@@ -23,6 +23,20 @@
             <a class="nav-element active" href="#">Login</a>
         </nav>
     </header>
+
+
+
+<script>
+    var nav = document.querySelector('header > nav');
+    var link = document.getElementById('login');
+    var listItems = document.getElementsByClassName('header-menu_list-item');
+    var image = document.getElementsByTagName('img');
+</script>
+
+
+
+
+
     <main>
         <section class="section1">
             <div style="background-image: url('./images/./breather-196135.jpg'); background-repeat: no-repeat; background-size: 100% 75%">
@@ -118,23 +132,17 @@
                 <div>
                     <form>
                         <form class="fields" action="https://qna.habr.com/question/ivc" method="POST" autocomplete="off">
-                            <label for="email">Email</label><br>
-                            <input class="input-field" type="email" id="email" name="email"><br>
+                            <input class="input-field" type="email" id="email" name="email" placeholder="Email"><br>
 
-                            <label for="firstname">First name</label><br />
-                            <input class="input-field" type="text" id="firstname" name="firstname"><br>
+                            <input class="input-field" type="text" id="firstname" name="firstname" placeholder="First name"><br>
 
-                            <label for="lastname">Last name</label><br>
-                            <input class="input-field" type="text" id="lastname" name="lastname"><br>
+                            <input class="input-field" type="text" id="lastname" name="lastname" placeholder="Last name"><br>
 
-                            <label for="companyname">Company name</label><br>
-                            <input class="input-field" type="text" id="companyname" name="companyname"><br> 
+                            <input class="input-field" type="text" id="companyname" name="companyname" placeholder="Company name"><br> 
 
-                            <label for="phonenumber">Phone number</label><br>
-                            <input class="input-field" type="number" id="phonenumber" name="phonenumber"><br>
+                            <input class="input-field" type="number" id="phonenumber" name="phonenumber" placeholder="Phone number"><br>
 
-                            <label for="yourmessage">Your message</label><br>
-                            <input class="input-field" type="text" id="yourmessage" name="yourmessage"><br> 
+                            <input class="input-field1" type="text" id="yourmessage" name="yourmessage" placeholder="Your message"><br> 
 
                             <div class="checkbox">
                                 <input type="checkbox" id="terms" name="terms" />
@@ -226,7 +234,7 @@
                         <p>2nd Floor, Building No 1735. Sector 2, HSR Layout,<br> Bengluru Karnataka 560102</p>        
                 </div>
  
-                <div>
+                <div class="line-left">
                     <h4>SERVICES</h4>
                     <ul class="footer-line1"> 
                         <li><a href="#">Plumber in Bangalore</a></li>
@@ -247,7 +255,7 @@
                     </ul>
                 </div>
 
-                <div>
+                <div class="line-left">
                     <h4>HOMIFY HOME MAINTENANCE PACKAGES</h4>
                     <ul class="footer-line1">
                         <li><a href="#">Full House Maintenance Package Home</a></li>
@@ -276,7 +284,7 @@
                         professionals to have a hassle free experience in this busy life schedule.</p> <!-- Разделение текста здесь будет при помощи ограницения длинны блока, не нужно использовать здесть <br>-->
                 </div>
 
-                <div>
+                <div class="line-left">
                     <h4>CUSTOMER SERVICE</h4>
                     <ul class="footer-line2">
                         <li>Customer Care Phone: <a href="tel:9811224540">9811224540</a></li>
