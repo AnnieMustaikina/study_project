@@ -20,22 +20,9 @@
         <nav class="main-nav">
             <a class="nav-element" href="#">Services</a>
             <a class="nav-element" href="#">Homify Maintenance Cover</a>
-            <a class="nav-element active" href="#">Login</a>
+            <a class="nav-element active login-button" href="#">Login</a>
         </nav>
     </header>
-
-
-
-<script>
-    var nav = document.querySelector('header > nav');
-    var link = document.getElementById('login');
-    var listItems = document.getElementsByClassName('header-menu_list-item');
-    var image = document.getElementsByTagName('img');
-</script>
-
-
-
-
 
     <main>
         <section class="section1">
@@ -141,8 +128,8 @@
                             <input class="input-field" type="text" id="companyname" name="companyname" placeholder="Company name"><br> 
 
                             <input class="input-field" type="number" id="phonenumber" name="phonenumber" placeholder="Phone number"><br>
-
-                            <input class="input-field1" type="text" id="yourmessage" name="yourmessage" placeholder="Your message"><br> 
+                            
+                            <textarea class="input-field textarea" rows="10" placeholder="Your message"></textarea>
 
                             <div class="checkbox">
                                 <input type="checkbox" id="terms" name="terms" />
@@ -267,7 +254,7 @@
                 </div>
                 </div>
                 
-                <img src="./images/Line.png" width="1250" height="2" style="padding-left: 100px;">
+                <img src="./images/Line.png" width="1200" height="2" style="padding-left: 100px;">
 
                 <div class="line2">
                 <div>
@@ -296,11 +283,11 @@
                 </div>
 
             <div class="buttons">
-                <input type="image" src="./images/./google-play-badge.png" name="button" style="margin-right: 20px; margin-left: -10px;"/>
+                <input type="image" src="./images/./google-play-badge.png" name="button" style="margin-right: 20px; margin-left: 0px;"/>
                 <input type="image" src="./images/./Group 2.png" name="button"/>
             </div>
             
-            <img src="./images/Line.png" width="1250" height="2" style="padding-left: 100px; padding-top: 30px;">
+            <img src="./images/Line.png" width="1200" height="2" style="padding-left: 100px; padding-top: 30px;">
 
                 <div class="line4">
                 <div>
@@ -324,7 +311,7 @@
 
 
 
-<section class="modal"> <!-- При написании с "modal" hidden, мы прячем попап. С JS мы его сможем закрыть-->
+<section class="modal hidden"> <!-- При написании с "modal" hidden, мы прячем попап. С JS мы его сможем закрыть-->
     <button class="modal-close"></button>
     <div class="b-auth-form">
         <div class="b-popup-h">Log into your account</div>
@@ -371,5 +358,20 @@
 </section>
 
 </body>
+
+
+<script> 
+    var loginButton = document.querySelector('.login-button');
+    var closeButton = document.querySelector(".modal-close");
+    loginButton.onclick = () =>{
+        var dialog = document.querySelector('.modal');
+        dialog.classList.remove("hidden")
+    }
+    closeButton.onclick = () =>{
+        var dialog = document.querySelector('.modal');
+        dialog.classList.add("hidden")
+    }
+</script>
+
 
 </html>
